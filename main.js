@@ -32,7 +32,9 @@ const ourTeam = [
 ]
 
 for (let i = 0; i < ourTeam.length; i++) {
-    const element = ourTeam[i];
-    console.log(element)
-    
+    const dato = ourTeam[i];
+    const div = document.createElement('div');
+    div.innerHTML = `Nome: ${dato.name}, Ruolo: ${dato.role}, Immagine: ${dato.picture}`;
+    document.body.appendChild(div);
 }
+
